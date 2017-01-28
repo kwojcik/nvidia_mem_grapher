@@ -25,6 +25,23 @@ def nvidia_stats():
 
 
 ```python
+%time
+nvidia_stats()
+```
+
+    CPU times: user 0 ns, sys: 0 ns, total: 0 ns
+    Wall time: 8.11 µs
+
+
+
+
+
+    (11439, '4233', 'MiB')
+
+
+
+
+```python
 period_secs=10
 while True:
     # Do some initialization so that we have a legend and labels
@@ -44,7 +61,7 @@ while True:
     while x < period_secs:
         _, used, _ = nvidia_stats()
         
-        # use time instead of a constant period because nvidia-smi can take a long time to return
+        # use time instead of a constant period because matplotlib is slow
         x = time.time() - start_time
         
         pl.scatter(x, used, label='used', marker='v')
@@ -56,7 +73,7 @@ while True:
 ```
 
 
-![png](nvidia_mem_grapher_files/nvidia_mem_grapher_3_0.png)
+![png](nvidia_mem_grapher_files/nvidia_mem_grapher_4_0.png)
 
 
 
