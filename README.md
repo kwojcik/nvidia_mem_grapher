@@ -25,23 +25,6 @@ def nvidia_stats():
 
 
 ```python
-%time
-nvidia_stats()
-```
-
-    CPU times: user 0 ns, sys: 0 ns, total: 0 ns
-    Wall time: 8.11 µs
-
-
-
-
-
-    (11439, '4233', 'MiB')
-
-
-
-
-```python
 period_secs=10
 while True:
     # Do some initialization so that we have a legend and labels
@@ -73,10 +56,5 @@ while True:
 ```
 
 
-![png](nvidia_mem_grapher_files/nvidia_mem_grapher_4_0.png)
+![png](nvidia_mem_grapher_files/nvidia_mem_grapher_3_0.png)
 
-
-
-```python
-
-```
