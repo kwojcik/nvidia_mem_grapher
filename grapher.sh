@@ -1,7 +1,10 @@
 #!/bin/bash
 rm plot.dat
 PERIOD=0.1
-DATA_POINTS=100
+DATA_POINTS=$1
+if [ $DATA_POINTS == "" ]; then
+    DATA_POINTS=50
+fi
 X=0
 writedata() {
     while true; do
