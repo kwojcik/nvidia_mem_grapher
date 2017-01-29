@@ -4,7 +4,7 @@ A little tool that graphs memory usage using *`nvidia-smi`*
 
 # Bash edition
 `$ ./grapher.sh`
-[![alt](https://asciinema.org/a/399bt2aw1fqv5qxeyy03mw47x.png)][https://asciinema.org/a/399bt2aw1fqv5qxeyy03mw47x]
+[![asciicast](http://asciinema.org/a/94ayxn5u5ypl5ai7xuv3e52fx.png)](http://asciinema.org/a/94ayxn5u5ypl5ai7xuv3e52fx)
 
 # Jupyter notebook edition
 
